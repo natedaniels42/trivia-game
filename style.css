@@ -1,0 +1,81 @@
+body {
+    width: 100%;
+    margin: 0 auto;
+    font-family: 'Irish Grover', cursive;
+}
+
+#title {
+    font-size: 5rem;
+}
+
+option {
+    font-family: 'Irish Grover', cursive;
+}
+#form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    box-shadow: 5px 5px 10px blue;
+    padding: 2%;
+    margin: 40px auto;
+}
+
+select {
+    margin:10px;
+}
+
+option {
+    font-family: 'Irish Grover', cursive;
+}
+
+button {
+    background-color: blue;
+    color: white;
+    width: 100px;
+    height: 40px;
+    margin: 0 auto;
+    border-radius: 10px;
+    font-family: 'Irish Grover', cursive;
+}
+
+li {
+    list-style: none;
+    cursor: pointer;
+    width: 20%;
+}
+
+li:hover {
+    background-color: lightgray;
+    transition: background-color .3s;
+}
+
+h1, h2 {
+    width: 50%;
+    margin: 10px auto;
+    line-height: 3rem;
+}
+
+#game-board {
+    visibility: hidden;
+    margin: 5%;
+}
+
+#next {
+    visibility: hidden;
+}
+
+#game-over {
+    visibility: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: blue;
+    margin: 0 auto;
+}
+
+a:hover {
+    color: white;
+    background-color: blue;
+    transition: color .3s, background-color .3s;
+}

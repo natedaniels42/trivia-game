@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivia Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="game.js" defer></script>
+</head>
+<body>
+    <h1 id="title">Trivia Mania!</h1>
+    <form id="form">
+        <label for="category">Choose a category: </label><br>
+        <select name="category" id="category">
+            <option value = "11">Film</option>
+            <option value = "12">Music</option>
+            <option value = "15">Video Games</option>
+            <option value = "31">Anime</option>
+        </select>
+        <label for="difficulty">Choose your difficulty: </label><br>
+        <div id="radar">
+            <label for="easy">Easy</label>
+            <input type="radio" name="difficulty" value="easy">
+            <label for="easy">Medium</label>
+            <input type="radio" name="difficulty" value="medium">
+            <label for="easy">Hard</label>
+            <input type="radio" name="difficulty" value="hard">
+        </div>
+        <button type="submit">Go to Game</button>
+    </form>
+    <section id="game-board">
+        <p>Score: <span id="score"></span></p>
+        <p>Question <span id="question-number"></span></p>
+        <h1 id="question"></h1>
+        <ul id="answers"></ul>
+        <button id="next">Next Question</button>
+    </section>
+    <section id="game-over">
+        <h1>You got <span id="final-score"></span>/5 questions correct</h1>
+        <button id="play-again">Play Again?</button>
+    </section>
+    <a href="./joke.html">Would you rather hear a joke?</a>
+</body>
+</html>
